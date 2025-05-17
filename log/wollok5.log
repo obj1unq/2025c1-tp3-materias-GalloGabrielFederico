@@ -1,0 +1,61 @@
+{"level":"info","message":"🧪 Test runner executed on c:\\wollok\\workspace\\2025c1-tp3-materias-GalloGabrielFederico","result":{"errored":0,"failed":1,"ok":0},"testsFailed":[{"error":["wollok.lib.AssertionException: Expected <[a List (0)]> but found <[a List (1)]>","  at materias.\"materias\".\"segundo test\" [materias.wtest:118]"],"test":"materias.\"materias\".\"segundo test\""}],"timeElapsed":686,"timestamp":"2025-05-17T18:51:12.007Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":103,"timestamp":"2025-05-17T18:54:39.254Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":157,"timestamp":"2025-05-17T18:54:43.174Z"}
+{"level":"error","message":"✘ Completions for node Send ([71:8, 71:41] - universidad.wlk) failed: Error: [Send]{8a9f2a} at universidad.wlk:71 exhausted all cases without a match [Send]{8a9f2a} at universidad.wlk:71 exhausted all cases without a match","stack":"Error: [Send]{8a9f2a} at universidad.wlk:71 exhausted all cases without a match\n    at c:\\Users\\ss_ga\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:38:6142\n    at C2 (c:\\Users\\ss_ga\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:2362:42)\n    at Gh (c:\\Users\\ss_ga\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:2362:1092)\n    at l8n (c:\\Users\\ss_ga\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:2362:1248)\n    at c:\\Users\\ss_ga\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:38:6131\n    at C2 (c:\\Users\\ss_ga\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:2362:42)\n    at c:\\Users\\ss_ga\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:2362:2988\n    at c:\\Users\\ss_ga\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:2371:8440\n    at c:\\Users\\ss_ga\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:37:74872\n    at Ye (c:\\Users\\ss_ga\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:7:8527)","timestamp":"2025-05-17T18:54:43.208Z"}
+{"level":"error","message":"✘ Completions for node If ([69:7, 72:8] - universidad.wlk) failed: Error: [If]{15c61c} at universidad.wlk:69 exhausted all cases without a match [If]{15c61c} at universidad.wlk:69 exhausted all cases without a match","stack":"Error: [If]{15c61c} at universidad.wlk:69 exhausted all cases without a match\n    at c:\\Users\\ss_ga\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:38:6142\n    at C2 (c:\\Users\\ss_ga\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:2362:42)\n    at Gh (c:\\Users\\ss_ga\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:2362:1092)\n    at p8n (c:\\Users\\ss_ga\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:2362:818)\n    at c:\\Users\\ss_ga\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:38:6131\n    at C2 (c:\\Users\\ss_ga\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:2362:42)\n    at Gh (c:\\Users\\ss_ga\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:2362:1092)\n    at C2 (c:\\Users\\ss_ga\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:2362:544)\n    at Gh (c:\\Users\\ss_ga\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:2362:1092)\n    at l8n (c:\\Users\\ss_ga\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:2362:1248)","timestamp":"2025-05-17T18:54:43.208Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":115,"timestamp":"2025-05-17T18:54:43.326Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":142,"timestamp":"2025-05-17T18:54:43.471Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":113,"timestamp":"2025-05-17T18:54:43.673Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":163,"timestamp":"2025-05-17T18:54:44.795Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":107,"timestamp":"2025-05-17T18:54:44.934Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":108,"timestamp":"2025-05-17T18:54:45.189Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":112,"timestamp":"2025-05-17T18:54:45.302Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":104,"timestamp":"2025-05-17T18:54:45.486Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":153,"timestamp":"2025-05-17T18:54:48.855Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":105,"timestamp":"2025-05-17T18:54:48.996Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":119,"timestamp":"2025-05-17T18:54:49.187Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":106,"timestamp":"2025-05-17T18:54:49.297Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":108,"timestamp":"2025-05-17T18:54:50.355Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":102,"timestamp":"2025-05-17T18:54:50.458Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":114,"timestamp":"2025-05-17T18:54:51.028Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":492,"timestamp":"2025-05-17T18:55:16.734Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":446,"timestamp":"2025-05-17T18:55:17.268Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":342,"timestamp":"2025-05-17T18:55:17.613Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":311,"timestamp":"2025-05-17T18:55:17.930Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":335,"timestamp":"2025-05-17T18:55:18.274Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":333,"timestamp":"2025-05-17T18:55:18.611Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":234,"timestamp":"2025-05-17T18:55:18.848Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":151,"timestamp":"2025-05-17T18:55:19.001Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":104,"timestamp":"2025-05-17T18:55:19.364Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":103,"timestamp":"2025-05-17T18:55:19.550Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":119,"timestamp":"2025-05-17T18:55:19.769Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":106,"timestamp":"2025-05-17T18:55:20.317Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":105,"timestamp":"2025-05-17T18:55:20.423Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":197,"timestamp":"2025-05-17T18:55:20.706Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":169,"timestamp":"2025-05-17T18:55:20.877Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":113,"timestamp":"2025-05-17T18:55:21.244Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":101,"timestamp":"2025-05-17T18:55:21.737Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":106,"timestamp":"2025-05-17T18:55:21.943Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":106,"timestamp":"2025-05-17T18:55:22.240Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":101,"timestamp":"2025-05-17T18:55:22.342Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":106,"timestamp":"2025-05-17T18:55:22.449Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":132,"timestamp":"2025-05-17T18:55:22.692Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":105,"timestamp":"2025-05-17T18:55:22.797Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":103,"timestamp":"2025-05-17T18:55:22.900Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":109,"timestamp":"2025-05-17T18:55:23.022Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":114,"timestamp":"2025-05-17T18:55:23.136Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":115,"timestamp":"2025-05-17T18:55:23.251Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":103,"timestamp":"2025-05-17T18:55:23.355Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":107,"timestamp":"2025-05-17T18:55:23.472Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":123,"timestamp":"2025-05-17T18:55:23.595Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":150,"timestamp":"2025-05-17T18:55:23.846Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":102,"timestamp":"2025-05-17T18:55:23.948Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":107,"timestamp":"2025-05-17T18:55:24.056Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":102,"timestamp":"2025-05-17T18:55:24.158Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":110,"timestamp":"2025-05-17T18:55:24.269Z"}
+{"level":"info","message":"🧪 Test runner executed on c:\\wollok\\workspace\\2025c1-tp3-materias-GalloGabrielFederico","result":{"errored":0,"failed":1,"ok":0},"testsFailed":[{"error":["wollok.lib.AssertionException: Expected <[a List (0)]> but found <[a List (1)]>","  at materias.\"materias\".\"segundo test\" [materias.wtest:118]"],"test":"materias.\"materias\".\"segundo test\""}],"timeElapsed":678,"timestamp":"2025-05-17T18:55:34.864Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":139,"timestamp":"2025-05-17T18:55:54.612Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":102,"timestamp":"2025-05-17T18:55:54.716Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":168,"timestamp":"2025-05-17T18:55:55.450Z"}
+{"level":"info","message":"⌛ Validating universidad.wlk","timeElapsed":106,"timestamp":"2025-05-17T18:55:55.557Z"}
+{"level":"info","message":"🧪 Test runner executed on c:\\wollok\\workspace\\2025c1-tp3-materias-GalloGabrielFederico","result":{"errored":0,"failed":0,"ok":1},"testsFailed":[],"timeElapsed":616,"timestamp":"2025-05-17T18:56:03.249Z"}

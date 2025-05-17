@@ -1,0 +1,129 @@
+import universidad.*
+
+import estudiante.*
+
+describe "materias" {
+  test "test1" {
+    const roque = new Estudiante(nombre = "roque")
+
+    roque.inscribirACarrera(programacion)
+    roque.inscribirACarrera(medicina)
+    roque.registrarNota(matematica1, 8)
+    roque.registrarNota(objetos1, 9)
+    roque.registrarNota(objetos2, 1)
+
+    assert.equals([matematica1, objetos1], roque.materiasAprobadas())
+
+    assert.equals(9, roque.notaDeMateria(objetos1))
+
+    assert.equals(2, roque.cantidadDeMateriasAprobadas())
+
+    assert.equals(6, roque.promedio())
+
+    assert.that(roque.estaAprobada(matematica1))
+    assert.notThat(roque.estaAprobada(objetos2))
+
+    assert.throwsException({ roque.registrarNota(matematica1, 6) })
+
+    assert.equals([elementosDeProgramacion, matematica1, objetos1, objetos2, objetos3, trabajoFinal, basesDeDatos, quimica, biologia1, biologia2, anatomiaGeneral], roque.listadoDeMaterias())
+    assert.that(roque.cumpleRequisitos(objetos2))
+    assert.that(objetos2.puedeInscribirse(roque))
+    assert.notThat(objetos3.puedeInscribirse(roque))
+
+   
+  }
+
+
+  test "test2" {
+    const roque = new Estudiante(nombre = "roque")
+    const pepe = new Estudiante(nombre = "pepe")
+
+    roque.inscribirACarrera(programacion)
+    roque.inscribirACarrera(medicina)
+    roque.registrarNota(matematica1, 8)
+    roque.registrarNota(objetos1, 9)
+    roque.registrarNota(objetos2, 1)
+    
+    pepe.inscribirACarrera(programacion)
+    pepe.registrarNota(matematica1, 6)
+    pepe.registrarNota(objetos1, 5)
+
+    objetos2.inscribirEstudiante(roque)
+
+    assert.equals(#{roque}, objetos2.alumnosInscriptos())
+
+
+    objetos2.inscribirEstudiante(pepe)
+
+    assert.equals([pepe], objetos2.enListaDeEspera())
+
+    objetos2.darDeBaja(roque)
+
+    assert.equals(#{}, objetos2.alumnosInscriptos())
+
+  }
+
+
+
+  test "primer test" {
+    //Roque puede inscribirse en Objetos 2, pero no en Objetos 3 (porque le falta Objetos 2) ni en Objetos 1 (porque ya la tiene aprobada)
+    const roque = new Estudiante(nombre = "roque")
+
+    roque.inscribirACarrera(programacion)
+    roque.inscribirACarrera(medicina)
+    roque.registrarNota(matematica1, 8)
+    roque.registrarNota(objetos1, 9)
+
+    assert.that(objetos2.puedeInscribirse(roque))
+
+    assert.notThat(objetos3.puedeInscribirse(roque))
+
+    assert.notThat(objetos1.puedeInscribirse(roque))
+
+  }
+
+  test "segundo test" {
+    //Si se inscriben, en este orden, Luisa, Romina, Alicia y Roque en Objetos 2, entonces las tres primeras quedan confirmadas, y Roque queda en lista de espera
+    const luisa = new Estudiante(nombre = "Luisa")
+    const romina = new Estudiante(nombre = "Romina")
+    const alicia = new Estudiante(nombre = "Alicia")
+    const roque = new Estudiante(nombre = "Roque")
+
+    roque.inscribirACarrera(programacion)
+    roque.registrarNota(matematica1, 8)
+    roque.registrarNota(objetos1, 9)
+    luisa.inscribirACarrera(programacion)
+    luisa.registrarNota(matematica1, 5)
+    luisa.registrarNota(objetos1, 6)
+    romina.inscribirACarrera(programacion)
+    romina.registrarNota(matematica1, 7)
+    romina.registrarNota(objetos1, 9)
+    alicia.inscribirACarrera(programacion)
+    alicia.registrarNota(matematica1, 8)
+    alicia.registrarNota(objetos1, 7)
+
+    objetos2.inscribirEstudiante(luisa)
+    objetos2.inscribirEstudiante(romina)
+    objetos2.inscribirEstudiante(alicia)
+    objetos2.inscribirEstudiante(roque)
+
+    assert.equals(#{luisa, romina, alicia}, objetos2.alumnosInscriptos())
+    assert.equals([roque], objetos2.enListaDeEspera())
+
+    //Si después se da de baja Romina en Objetos 2, entonces Roque pasa a tener la inscripción confirmada en esa materia
+
+    objetos2.darDeBaja(romina)
+
+    assert.equals(#{luisa, roque, alicia}, objetos2.alumnosInscriptos())
+    assert.equals([], objetos2.enListaDeEspera())
+  }
+}
+
+
+
+
+
+
+
+
+
