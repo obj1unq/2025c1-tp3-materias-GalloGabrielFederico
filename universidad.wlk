@@ -31,6 +31,7 @@ object derecho inherits Carrera(nombre = "derecho", materias = #{latin, derechoR
 
 
 
+
 class Materia {
     const property nombre 
 
@@ -49,18 +50,16 @@ class Materia {
     }
 
     method inscribirEstudiante(_estudiante) {
-      if(not self.puedeInscribirse(_estudiante)){
-        self.error("no cumple requisitos de inscripcion")
+      self.validarInscribirse(_estudiante)
+      if(self.alumnosInscriptos().size() < self.cupo()){
+         alumnosInscriptos.add(_estudiante)
+         _estudiante.materiasInscriptas().add(self)
+         _estudiante.materiasEnEspera().remove(self)
       }
-      else if(self.alumnosInscriptos().size() < self.cupo()){
-            alumnosInscriptos.add(_estudiante)
-            _estudiante.materiasInscriptas().add(self)
-            _estudiante.materiasEnEspera().remove(self)
-           }
-           else{
-            enListaDeEspera.add(_estudiante)
-            _estudiante.materiasEnEspera().add(self)
-           }
+      else{
+         enListaDeEspera.add(_estudiante)
+         _estudiante.materiasEnEspera().add(self)
+      }
     }
 
     method darDeBaja(_estudiante) {
@@ -72,6 +71,11 @@ class Materia {
       }
     }    
 
+  method validarInscribirse(_estudiante) {
+    if(not self.puedeInscribirse(_estudiante)){
+        self.error("no cumple requisitos de inscripcion")
+      }
+  }
 }
 
 

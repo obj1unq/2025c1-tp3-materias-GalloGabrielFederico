@@ -8,7 +8,7 @@ class Estudiante {
 
     const carrerasQueCursa =#{}
 
-    const historialAcademico = []
+    const property historialAcademico = []
     
     const property materiasInscriptas = #{}
 
@@ -24,10 +24,6 @@ class Estudiante {
         historialAcademico.add(materiaConNota)
     }
 
-    method materiasAprobadas() {
-        const aprobadas = historialAcademico.filter({ma => ma.nota()>=4})
-        return aprobadas.map({ma => ma.materia()})
-    }
 
     method notaDeMateria(_materia) {
         const materia = historialAcademico.findOrDefault({ma => ma.materia() == _materia}, null)
@@ -40,7 +36,7 @@ class Estudiante {
     }
 
     method cantidadDeMateriasAprobadas() {
-        return historialAcademico.filter({ma => ma.nota()>=4}).size()
+        return materiasAprobadas.materiasQueAprobo(self).size()
     }
 
     method promedio() {
@@ -72,19 +68,14 @@ class Estudiante {
     }
 
     method cumpleRequisitos(_materia) {
-        if(_materia.requisitos().isEmpty()){
-            return true
-        }
-        else{
-            return _materia.requisitos().all({materia => self.materiasAprobadas().contains(materia)})
+        if(not _materia.requisitos().isEmpty()){
+            return _materia.requisitos().all({ma => materiasAprobadas.materiasQueAprobo(self).contains(ma)})
         }
     }
 
     method informacionUtil() {
-        const stringDeMateriasAprobadas = self.materiasAprobadas().map({materia => materia.nombre() + ", "})
-        const stringDeMateriasEnEspera = self.materiasEnEspera().map({materia => materia.nombre() + ", "})
-        return "Materias aprobadas" + stringDeMateriasAprobadas
-               "Materias en lista de espera" + stringDeMateriasEnEspera
+        return "Las materias aprobadas son" + materiasAprobadas.materiasQueAprobo(self) +
+               "Las materias en lista de espera son" + self.materiasEnEspera()
     }
 
     method materiasQueFaltaParaRecibirse() {
@@ -95,7 +86,13 @@ class Estudiante {
 
 
 
+object materiasAprobadas {
 
+    method materiasQueAprobo(estudiante) {
+        const aprobadas = estudiante.historialAcademico().filter({ma => ma.nota()>=4})
+        return aprobadas.map({ma => ma.materia()})
+    }
+}
 
 
 

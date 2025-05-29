@@ -2,7 +2,9 @@ import universidad.*
 
 import estudiante.*
 
+
 describe "materias" {
+  
   test "test1" {
     const roque = new Estudiante(nombre = "roque")
 
@@ -12,7 +14,7 @@ describe "materias" {
     roque.registrarNota(objetos1, 9)
     roque.registrarNota(objetos2, 1)
 
-    assert.equals([matematica1, objetos1], roque.materiasAprobadas())
+    assert.equals([matematica1, objetos1], materiasAprobadas.materiasQueAprobo(roque))
 
     assert.equals(9, roque.notaDeMateria(objetos1))
 
